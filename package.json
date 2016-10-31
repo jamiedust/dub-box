@@ -1,11 +1,12 @@
 {
   "name": "dub-box",
   "version": "1.0.0",
-  "description": "Dub Selectors Tool Kit",
-  "main": "index.htm",
+  "description": "Dub selectors tool box in web standards",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/js/index.js -o build/main.js"
+    "build-js": "browserify src/js/index.js -o build/main.js",
+    "build-less": "lessc -x src/less/index.less build/main.css"
   },
   "keywords": [
     "web audio",
