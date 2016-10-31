@@ -1,0 +1,26 @@
+{
+  "name": "dub-box",
+  "version": "1.0.0",
+  "description": "Dub Selectors Tool Kit",
+  "main": "index.htm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/js/index.js -o build/main.js"
+  },
+  "keywords": [
+    "web audio",
+    "dub",
+    "delay",
+    "dub siren"
+  ],
+  "author": "Jamie 'dust' Woolgar <jamie@jamiewoolgar.net> (http://jamiewoolgar.net)",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "less": "^2.7.1",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "audio-context-monkey-patch": "git+https://github.com/jamiedust/AudioContext-MonkeyPatch.git#gh-pages"
+  }
+}
